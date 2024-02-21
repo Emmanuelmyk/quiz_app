@@ -30,13 +30,21 @@ class _StartPageState extends State<StartPage> {
   Widget build(context) {
     Widget screenWidget = FirstPage(switchScreen);
 
-    if (activeScreen == 'question-screen'){
+    if (activeScreen == 'question-screen') {
       screenWidget = const Questions();
     }
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          color: const Color.fromARGB(255, 40, 10, 104),
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 40, 10, 104),
+              Color.fromARGB(255, 99, 41, 222),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomCenter,
+          )),
           child: Center(
             child: screenWidget,
           ),

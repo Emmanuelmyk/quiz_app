@@ -32,7 +32,7 @@ class FirstPage extends StatelessWidget {
       OutlinedButton.icon(
           onPressed: startQuiz,
           style: OutlinedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(233, 27, 9, 72),
+            backgroundColor: const Color.fromARGB(57, 52, 28, 114),
             foregroundColor: const Color.fromARGB(255, 255, 255, 255),
             textStyle: const TextStyle(
               fontSize: 20,
