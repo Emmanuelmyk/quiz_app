@@ -9,27 +9,29 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Column(mainAxisSize: MainAxisSize.min, children: [
-      Image.asset(
-        logo,
-        width: 300,
-        color: const Color.fromARGB(120, 255, 255, 255),
-      ),
-      const SizedBox(
-        height: 40,
-      ),
-      const Text(
-        'Learn Flutter the fun way',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 30,
-          fontWeight: FontWeight.w300,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset(
+          logo,
+          width: 300,
+          color: const Color.fromARGB(120, 255, 255, 255),
         ),
-      ),
-      const SizedBox(
-        height: 40,
-      ),
-      OutlinedButton.icon(
+        const SizedBox(
+          height: 40,
+        ),
+        const Text(
+          'Learn Flutter the fun way',
+          style: TextStyle(
+            color: Color.fromARGB(255, 205, 188, 243),
+            fontSize: 30,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        const SizedBox(
+          height: 40,
+        ),
+        OutlinedButton.icon(
           onPressed: startQuiz,
           style: OutlinedButton.styleFrom(
             backgroundColor: const Color.fromARGB(57, 52, 28, 114),
@@ -39,7 +41,9 @@ class FirstPage extends StatelessWidget {
             ),
           ),
           icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Start Quiz'))
-    ]);
+          label: const Text('Start Quiz'),
+        )
+      ],
+    );
   }
 }
