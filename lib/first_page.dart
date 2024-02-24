@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const logo = 'assets/images/quiz-logo.png';
+const logo = 'asset/images/quiz-logo.png';
 
 class FirstPage extends StatelessWidget {
   const FirstPage(this.startQuiz, {super.key});
