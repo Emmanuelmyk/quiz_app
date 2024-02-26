@@ -20,12 +20,6 @@ class _StartPageState extends State<StartPage> {
     });
   }
 
-  // @override
-  // void initState() {
-  //   activeScreen = FirstPage(switchScreen);
-  //   super.initState();
-  // }
-
   @override
   Widget build(context) {
     Widget screenWidget = FirstPage(switchScreen);

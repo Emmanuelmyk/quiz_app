@@ -46,8 +46,8 @@ class _QuestionsState extends State<Questions> {
             height: 30,
           ),
           ...currentQuestion.getShuffledAnswes().map(
-            (item) {
-              return AnswerBtn(item, answerQuestion);
+            (answer) {
+              return AnswerBtn(answer, answerQuestion);
             },
           ),
         ],
