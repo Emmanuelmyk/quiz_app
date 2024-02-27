@@ -28,13 +28,20 @@ class _StartPageState extends State<StartPage> {
 
     if (selectedAnswers.length == questions.length) {
       setState(() {
-        selectedAnswers = [];
+        // selectedAnswers = [];
         activeScreen = 'results-screen';
       });
     }
   }
 
-  @override
+  void restartQuiz(){
+    setState(() {
+      selectedAnswers = [];
+      activeScreen = 'questions-screen';
+    });
+  }
+
+  @override 
   Widget build(context) {
     Widget screenWidget = FirstPage(switchScreen);
 
@@ -45,7 +52,7 @@ class _StartPageState extends State<StartPage> {
     }
 
     if (activeScreen == 'results-screen') {
-      screenWidget = const ResultScreen();
+      screenWidget = ResultScreen(chosenAnswers: selectedAnswers);
     }
     return MaterialApp(
       home: Scaffold(
