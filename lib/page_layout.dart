@@ -34,14 +34,14 @@ class _StartPageState extends State<StartPage> {
     }
   }
 
-  void restartQuiz(){
+  void restartQuiz() {
     setState(() {
       selectedAnswers = [];
       activeScreen = 'questions-screen';
     });
   }
 
-  @override 
+  @override
   Widget build(context) {
     Widget screenWidget = FirstPage(switchScreen);
 
@@ -52,7 +52,10 @@ class _StartPageState extends State<StartPage> {
     }
 
     if (activeScreen == 'results-screen') {
-      screenWidget = ResultScreen(chosenAnswers: selectedAnswers);
+      screenWidget = ResultScreen(
+        chosenAnswers: selectedAnswers,
+        onRestart: restartQuiz,
+      );
     }
     return MaterialApp(
       home: Scaffold(

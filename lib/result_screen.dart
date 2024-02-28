@@ -4,7 +4,8 @@ import 'package:quiz_app/questions_summary.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key, required this.chosenAnswers, required this.onRestart});
+  const ResultScreen(
+      {super.key, required this.chosenAnswers, required this.onRestart});
 
   final void Function() onRestart;
   final List<String> chosenAnswers;
