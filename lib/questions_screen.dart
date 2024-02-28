@@ -15,16 +15,14 @@ class Questions extends StatefulWidget {
 }
 
 class _QuestionsState extends State<Questions> {
-
   var currentQuestionIndex = 0;
 
-    void answerQuestion(String selectedAnswers){
-      widget.onSelectAnswer(selectedAnswers);
-      setState(() {
-        currentQuestionIndex++;
-      });
-     
-    }
+  void answerQuestion(String selectedAnswers) {
+    widget.onSelectAnswer(selectedAnswers);
+    setState(() {
+      currentQuestionIndex++;
+    });
+  }
 
   @override
   Widget build(context) {
@@ -50,7 +48,7 @@ class _QuestionsState extends State<Questions> {
           ),
           ...currentQuestion.getShuffledAnswes().map(
             (answer) {
-              return AnswerBtn(answer, (){
+              return AnswerBtn(answer, () {
                 answerQuestion(answer);
               });
             },

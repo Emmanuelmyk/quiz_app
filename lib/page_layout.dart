@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/first_page.dart';
 import 'package:quiz_app/questions_screen.dart';
@@ -43,7 +44,13 @@ class _StartPageState extends State<StartPage> {
 
   @override
   Widget build(context) {
-    Widget screenWidget = FirstPage(switchScreen);
+    Widget screenAnimate = FirstPage(switchScreen)
+        .animate()
+        .slideX(delay: const Duration(milliseconds: 200), begin: -3)
+        .fade(
+          duration: const Duration(milliseconds: 700),
+        );
+    Widget screenWidget = screenAnimate;
 
     if (activeScreen == 'question-screen') {
       screenWidget = Questions(
@@ -61,17 +68,16 @@ class _StartPageState extends State<StartPage> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 40, 10, 104),
-              Color.fromARGB(255, 99, 41, 222),
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomCenter,
-          )),
-          child: Center(
-            child: screenWidget,
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 40, 10, 104),
+                Color.fromARGB(255, 99, 41, 222),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomCenter,
+            ),
           ),
+          child: Center(child: screenWidget),
         ),
       ),
     );
