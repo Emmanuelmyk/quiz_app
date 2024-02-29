@@ -23,8 +23,9 @@ class FirstPage extends StatelessWidget {
         ),
         Text(
           'Learn Flutter the fun way',
-          style: GoogleFonts.splash(
-            color: const Color.fromARGB(255, 205, 188, 243),
+          // style: GoogleFonts.splash(
+          style: GoogleFonts.lato(
+            color: const Color.fromARGB(163, 255, 255, 255),
             fontSize: 30,
             fontWeight: FontWeight.w400,
           ),
@@ -35,13 +36,17 @@ class FirstPage extends StatelessWidget {
         OutlinedButton.icon(
           onPressed: startQuiz,
           style: OutlinedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(57, 52, 28, 114),
-            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(40),
+            ),
+            backgroundColor: const Color.fromARGB(255, 249, 133, 133),
+            foregroundColor: const Color.fromARGB(138, 0, 0, 0),
             textStyle: const TextStyle(
               fontSize: 15,
+              fontWeight: FontWeight.bold,
             ),
           ),
-          icon: const Icon(Icons.arrow_right_alt),
+          icon: const Icon(Icons.arrow_right_alt_outlined),
           label: const Text('Start Quiz'),
         )
       ],

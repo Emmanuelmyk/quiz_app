@@ -70,8 +70,10 @@ class _StartPageState extends State<StartPage> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 40, 10, 104),
-                Color.fromARGB(255, 99, 41, 222),
+                Color.fromARGB(255, 10, 96, 108),
+                Color.fromARGB(255, 0, 181, 204),
+                // Color.fromARGB(255, 137, 196, 244),
+                // Color.fromARGB(201, 145, 96, 125),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomCenter,

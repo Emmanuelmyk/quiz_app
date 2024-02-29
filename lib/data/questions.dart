@@ -2,54 +2,88 @@ import 'package:quiz_app/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'What country has the highest life expectancy?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'Hong Kong',
+      'China',
+      'Japan',
+      'Nigeria',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+  QuizQuestion('What is the most common surname in the United States?', [
+    'Smith',
+    'Brown',
+    'Charles',
+    'John',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'Which language has the more native speakers: English or Spanish?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'English',
+      'Spanish',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'What year was the United Nations established?',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
+      '1945',
+      '1946',
+      '1944',
       'None of the above',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'Which artist has the most streams on Spotify?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      'Drake',
+      'Wizkid',
+      'Rihanna',
+      'Davido',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'How many minutes are in a full week?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      '10,080',
+      '12,000',
+      '10,000',
+      '12,080',
+    ],
+  ),
+  QuizQuestion(
+    'How many elements are in the periodic table?',
+    [
+      '118',
+      '120',
+      '116',
+      '121',
+    ],
+  ),
+  QuizQuestion(
+    'What Netflix show had the most streaming views in 2021?',
+    [
+      'Squid Game',
+      'Lupin',
+      'Money Heist',
+      'Stranger Things',
+    ],
+  ),
+  QuizQuestion(
+    'What software company is headquartered in Redmond, Washington?',
+    [
+      'Microsoft',
+      'Google',
+      'Apple',
+      'Samsung',
+    ],
+  ),
+  QuizQuestion(
+    'Who was the Ancient Greek God of the Sun? ',
+    [
+      'Apollo',
+      'Ares',
+      'Athena',
+      'Aphrodite',
     ],
   ),
 ];
