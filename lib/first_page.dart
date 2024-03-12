@@ -22,7 +22,7 @@ class FirstPage extends StatelessWidget {
           height: 40,
         ),
         Text(
-          'Learn Flutter the fun way',
+          'Know the world the fun way',
           // style: GoogleFonts.splash(
           style: GoogleFonts.lato(
             color: const Color.fromARGB(163, 255, 255, 255),
