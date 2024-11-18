@@ -22,7 +22,7 @@ class FirstPage extends StatelessWidget {
           height: 40,
         ),
         Text(
-          'Know the world the fun way',
+          'Know the world the fun way!',
           // style: GoogleFonts.splash(
           style: GoogleFonts.lato(
             color: const Color.fromARGB(163, 255, 255, 255),
@@ -39,8 +39,8 @@ class FirstPage extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(40),
             ),
-            backgroundColor: const Color.fromARGB(255, 249, 133, 133),
-            foregroundColor: const Color.fromARGB(138, 0, 0, 0),
+            backgroundColor: const Color.fromARGB(255, 134, 192, 80),
+            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
             textStyle: const TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.bold,
